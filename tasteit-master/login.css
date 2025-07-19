@@ -1,0 +1,116 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background: linear-gradient(to right, rgb(68, 7, 7), rgb(165, 41, 41));
+      color: white;
+      font-family: cursive, sans-serif;
+    }
+
+    .container-fluid {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    .box {
+      max-width: 1100px;
+      width: 100%;
+      display: flex;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      border-radius: 20px;
+      background: transparent;
+    }
+
+    .image-section {
+      flex: 1.4;
+      background-image: url('images/burgerimage.jpg');
+      background-size: cover;
+      background-position: center;
+      border-top-right-radius: 10%;
+      border-bottom-right-radius: 10%;
+      min-height: 600px;
+    }
+
+    @media (max-width: 767.98px) {
+      .image-section {
+        display: none !important;
+      }
+    }
+
+    .form-section {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 30px;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+    }
+
+    @media (max-width: 991.98px) {
+      .form-section {
+        border-radius: 20px;
+        padding: 30px 20px;
+        margin: 15px;
+      }
+    }
+
+    form .form-control {
+      background-color: transparent;
+      border: 1px solid #ff993b;
+      color: white;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    form .form-control::placeholder {
+      color: #ffcc80;
+    }
+
+    form .form-control:focus {
+      border-color: orange;
+      box-shadow: 0 0 10px orange;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: black;
+    }
+
+    .btn {
+      background-color: white;
+      color: black;
+      font-weight: 700;
+      border-radius: 25px;
+      padding: 10px;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+      border: none;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 15px rgb(211, 56, 56);
+      border-color: rgb(211, 56, 56);
+      color: black;
+    }
+
+    .form-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .form-link a {
+      color: #ffcc80;
+      text-decoration: none;
+    }
+
+    .form-link a:hover {
+      text-decoration: underline;
+    }

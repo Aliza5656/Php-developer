@@ -1,0 +1,164 @@
+  /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background: linear-gradient(to right, rgb(68, 7, 7), rgb(165, 41, 41));
+      color: white;
+      font-family: cursive, sans-serif;
+    }
+
+    /* Container center */
+    .container-fluid {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    /* Box with shadow and max width */
+    .box {
+      max-width: 1100px;
+      width: 150%;
+      
+      display: flex;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      border-radius: 20px;
+   
+      background: transparent;
+    }
+
+    /* Image section */
+    .image-section {
+      flex: 1.4;
+      background-image: url('images/burgerimage.jpg');
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: 10%;
+      border-bottom-left-radius: 10%;
+      min-height: 600px;
+      transition: min-height 0.3s ease;
+    }
+
+    /* Hide image on small screens */
+    @media (max-width: 767.98px) {
+      .image-section {
+        display: none !important;
+      }
+    }
+
+    /* Form section */
+    .form-section {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+
+      padding: 40px 30px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      transition: min-height 0.3s ease;
+    }
+
+    @media (max-width: 991.98px) {
+      .form-section {
+        border-radius: 20px;
+        min-height: auto;
+        padding: 30px 20px;
+        margin: 15px;
+      }
+    }
+
+    /* Form controls */
+    form .form-control,
+    form .form-select {
+      background-color: transparent;
+      border: 1px solid #ff993b;
+      
+      border-radius: 10px;
+      padding: 10px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    form .form-control::placeholder ,
+    form .form-select::placeholder
+    {
+      color: #ffcc80; /* light orange placeholder */
+    }
+
+    form .form-control:focus,
+    form .form-select:focus {
+      border-color: orange;
+      box-shadow: 0 0 10px orange;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: black;
+    }
+
+    /* Button style */
+    .btn {
+      background-color: white;
+      color: black;
+      font-weight: 700;
+      border-radius: 25px;
+      padding: 10px;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+      border: none;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 15px rgb(211, 56, 56);
+      border-color: rgb(211, 56, 56);
+      color: black;
+    }
+
+    /* Gender radio */
+    .gender-group {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      color: white;
+    }
+
+    .gender-group label {
+      cursor: pointer;
+    }
+
+    /* Checkbox label */
+    .form-check-label {
+      color: white;
+    }
+    .form-link a {
+      color: #ffcc80;
+      text-decoration: none;
+    }
+
+    .form-link a:hover {
+      text-decoration: underline;
+    }
+    .siginbtn{
+      
+ background: rgb(211, 56, 56);
+  color: white;
+      font-weight: 700;
+      border-radius: 25px;
+      padding: 10px;
+      transition: box-shadow 0.3s ease, border-color 0.3s ease;
+      font-family: 'Courier New', Courier, monospace;
+     
+
+    }
+    .siginbtn:hover {
+      box-shadow: 0 0 15px rgb(211, 56, 56);
+      border-color: rgb(211, 56, 56);
+      color: black;
+    }
